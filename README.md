@@ -7,7 +7,7 @@ Code to segment yeast cells using a pre-trained mask-rcnn model. We've tested th
 ## Downloading the Weights
 For this model to work, you will need the pre-trained weights for the neural network, which are too large to share on GitHub. You can grab them from our webserver as a zip file (http://142.150.215.41/weights.zip). 
 
-Once downloaded, simply unzip, so that there is a directory called "weights" containing a file called "deepretina_final.h5" in the same directory of the segmentation code.
+Once downloaded, simply unzip, so that there is a sub-directory called "weights" containing a file called "deepretina_final.h5" in the same directory of the segmentation.py and opts.py scripts. 
 
 ## Instructions
 1. Put all of the images you want to segment in one directory (this will be the input directory).
