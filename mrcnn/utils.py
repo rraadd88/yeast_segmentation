@@ -15,11 +15,12 @@ import numpy as np
 import tensorflow as tf
 import scipy
 import skimage.color
-import skimage.io
 import skimage.transform
 import urllib.request
 import shutil
 import warnings
+
+from PIL import Image
 
 # URL from which to download the latest COCO trained weights
 COCO_MODEL_URL = "https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5"
@@ -365,7 +366,7 @@ class Dataset(object):
         """Load the specified image and return a [H,W,3] Numpy array.
         """
         # Load image
-        image = skimage.io.imread(self.image_info[image_id]['path'])
+        image = np.array(Image.open(self.image_info[image_id]['path']))
         # If grayscale. Convert to RGB for consistency.
         if image.ndim != 3:
             image = skimage.color.gray2rgb(image)
@@ -835,6 +836,7 @@ def batch_slice(inputs, graph_fn, batch_size, names=None):
     computation graph and then combines the results. It allows you to run a
     graph on a batch of inputs even if the graph is written to support one
     instance only.
+
 
     inputs: list of tensors. All must have the same first dimension length
     graph_fn: A function that returns a TF tensor that's part of a graph.
