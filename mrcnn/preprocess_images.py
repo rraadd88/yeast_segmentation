@@ -27,7 +27,9 @@ def preprocess_images(inputdirectory, outputdirectory, outputfile, verbose = Fal
             if verbose:
                 print ("Preprocessing ", imagename)
 
-            image = np.array(Image.open(inputdirectory + imagename).convert("L"))
+            image = np.array(Image.open(inputdirectory + imagename))
+            if len(image.shape) > 2:
+                image = image[:, :, 0]
             height = image.shape[0]
             width = image.shape[1]
 
