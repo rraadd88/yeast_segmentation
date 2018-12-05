@@ -13,3 +13,11 @@ Once downloaded, simply unzip, so that there is a sub-directory called "weights"
 1. Put all of the images you want to segment in one directory (this will be the input directory).
 2. Modify the opts.py file to point to the input directory, as well as the output directory to write the segmentations to (this directory should be empty). You can change various settings here, including what immediate files to write, and whether to rescale the images during segmentation to speed up the process.
 3. Run "python segmentation.py", and the script should handle everything from preprocessing to feeding into the neural network to post-processing. You're done! 
+
+## Examples of Segmentation
+
+These examples were produced from the same model, with the same parameters. There is no need to manually specify any parameters when switching between modalities or images from different microscopes. 
+
+![Fluorescent Images](fluorescent_seg.png)
+
+![Brightfield Images](brightfield_seg.png)
