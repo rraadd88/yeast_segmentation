@@ -13,6 +13,7 @@ Once downloaded, simply unzip, so that there is a sub-directory called "weights"
 1. Put all of the images you want to segment in one directory (this will be the input directory).
 2. Modify the opts.py file to point to the input directory, as well as the output directory to write the segmentations to (this directory should be empty). You can change various settings here, including what immediate files to write, and whether to rescale the images during segmentation to speed up the process.
 3. Run "python segmentation.py", and the script should handle everything from preprocessing to feeding into the neural network to post-processing. You're done! 
+4. The output will be an integer-labeled image. Background is assigned a value of 0, and each individual cell is assigned an integer in incremental order (e.g. 1, 2, 3...) Stay tuned for some scripts to upload these files into ImageJ, Matlab, and Python for subsequent analysis soon.
 
 ## Examples of Segmentation
 
