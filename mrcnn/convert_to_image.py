@@ -66,7 +66,7 @@ def convert_to_image(rlefile, outputdirectory, preprocessed_image_list,
             currobj = currobj + 1
 
         if rescale:
-            image = skimage.transform.resize(image, output_shape = (height, width), preserve_range = True)
+            image = skimage.transform.resize(image, output_shape = (height, width), order=0, preserve_range = True)
 
         image = Image.fromarray(image)
         image.save(outputdirectory + f + ".tif")
