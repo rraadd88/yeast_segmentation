@@ -1,9 +1,9 @@
 ############# INPUTS AND OUTPUTS #############
 # Input directory of images to be segmented
-input_directory = "/valr/alexlu/new_segmentation_test_images/input_images/"
+input_directory = "input_images/"
 
 # Output directory to save masks to
-output_directory = "/valr/alexlu/new_segmentation_test_images/test_output/"
+output_directory = "test_output/"
 ##############################################
 
 ################## OPTIONS ###################

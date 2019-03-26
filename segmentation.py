@@ -45,15 +45,15 @@ if os.path.isdir(opt.output_directory):
                              scale_factor=opt.scale_factor,
                              verbose = opt.verbose)
 
-        os.remove(preprocessed_image_list)
+#        os.remove(preprocessed_image_list)
         
-        if not opt.save_preprocessed:
-            shutil.rmtree(preprocessed_image_directory)
+        #if not opt.save_preprocessed:
+        #    shutil.rmtree(preprocessed_image_directory)
 
-        if not opt.save_compressed:
-            os.remove(rle_file)
+        #if not opt.save_compressed:
+        #    os.remove(rle_file)
 
-        if not opt.save_masks:
-            shutil.rmtree(output_mask_directory)
+        #if not opt.save_masks:
+        #    shutil.rmtree(output_mask_directory)
 
 
