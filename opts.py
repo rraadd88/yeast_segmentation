@@ -1,25 +1,8 @@
-############# INPUTS AND OUTPUTS #############
-# Input directory of images to be segmented
-input_directory = "input_images/"
-
-# Output directory to save masks to
-output_directory = "test_output/"
-##############################################
-
-################## OPTIONS ###################
-# Set to true to rescale the input images to reduce segmentation time
-rescale = False
-scale_factor = 2          # Factor to downsize images by if rescale is True
-
-# Set to true to save preprocessed images as input to neural network (useful for debugging)
-save_preprocessed = False
-
-# Set to true to save a compressed RLE version of the masks for sharing
-save_compressed = False
-
-# Set to true to save the full masks
-save_masks = True
-
-# Set to true to have the neural network print out its segmentation progress as it proceeds
-verbose = True
-##############################################
+input_directory='/media/rohan/tnetennba/Documents/propropro/writ/prjs/02dpi/code/05_more_accurate/test_dataset/segmentation_cell/yeastspotter_input'
+output_directory='/media/rohan/tnetennba/Documents/propropro/writ/prjs/02dpi/code/05_more_accurate/test_dataset/segmentation_cell/yeastspotter_output'
+rescale=False
+scale_factor=2
+save_preprocessed=False
+save_compressed=False
+save_masks=True
+verbose=True
