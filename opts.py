@@ -1,5 +1,5 @@
-input_directory='/project/chlandry/projects/endocytosis/test_dataset/segmentation_cell/yeastspotter_input'
-output_directory='/project/chlandry/projects/endocytosis/test_dataset/segmentation_cell/yeastspotter_output'
+input_directory='/project/chlandry/projects/endocytosis/0110tiffs/segmentation_cell/yeastspotter_input'
+output_directory='/project/chlandry/projects/endocytosis/0110tiffs/segmentation_cell/yeastspotter_output'
 rescale=False
 scale_factor=2
 save_preprocessed=False
